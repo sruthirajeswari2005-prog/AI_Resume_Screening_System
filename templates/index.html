@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Screening System</title>
+</head>
+<body>
+
+    <h1>AI Resume Screening System</h1>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+
+        <label><b>Upload Resume (PDF)</b></label><br><br>
+
+        <input type="file" name="resume" accept=".pdf" required>
+
+        <br><br>
+
+        <label><b>Enter Job Description</b></label><br><br>
+
+        <textarea
+            name="job_description"
+            rows="10"
+            cols="80"
+            placeholder="Paste Job Description Here..."
+            required></textarea>
+
+        <br><br>
+
+        <button type="submit">Analyze Resume</button>
+
+    </form>
+
+</body>
+</html>
